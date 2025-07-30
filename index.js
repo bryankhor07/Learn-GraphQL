@@ -66,6 +66,7 @@ const resolvers = {
         }
         return g;
       });
+      return db.games.find((g) => g.id === args.id);
     },
   },
 };
